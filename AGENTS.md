@@ -61,6 +61,10 @@ Toda função nova que usa a service role autentica quem chama dentro da funçã
 | `HUB_PROVISIONING_TOKEN` | Supabase do produto. Mesmo valor de `{{TOKEN_REF}}` no Supabase do Hub |
 | `PRODUCT_DOMAIN`, `SYSTEM_ADMIN_EMAIL` | Supabase do produto |
 
+## Ambientes
+
+Projeto no Coolify com dois environments: `homologação` (servidor Homologação, branch `hml`, `<slug>-hlg.sbtech-group.com`) e `produção` (servidor Produção, branch `main`, `<slug>.sbtech-group.com`). `VITE_SUPABASE_*` são manuais por ambiente e o deploy só roda depois delas. Detalhes em `../SBAGENTS/standards/arquitetura.md > Ambientes`. Erros de log e deploy falho chegam como cards em Tarefas do Hub (Sentinela).
+
 ## Pontos sensíveis
 
 | Área | Por que é sensível |
